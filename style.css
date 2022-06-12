@@ -1,0 +1,1391 @@
+/* from fonts.google.com - used for fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+/* whole webpage setting */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* used as format setting of a content */
+.max-width {
+    max-width: 1500px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+/* navigation bar - including the logo,  */
+.navbar{
+    position: fixed;
+    width     : 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px 0;
+    background: turquoise;
+    z-index: 1;
+}
+
+/* should have no space */
+/* changes the background of the navbar */
+.navbar.sticky{
+    padding: 30px 0;
+    background: tomato;
+}
+
+/* logo style */
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo text style */
+.navbar .logo a{
+    color: rgb(138, 102, 13);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* style of menu */
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+/* text style of menu using a(anchor tag) */
+.navbar .menu li a{
+    display:block;
+    color: white;
+    font-size: 15px;
+    font-weight: 1000;
+    margin-left: 15px;
+    transition: all 1s ease;
+}
+
+/* light up chosen tab on menu when you hover using the cursor */
+.navbar .menu li a:hover{
+    color: black;
+}
+
+/* logo hover light */
+.navbar .logo a:hover{
+    color:black;
+}
+
+/* color of the word "Engineer" enclosed in span */
+.navbar .logo a span{
+    color:black;
+}
+
+/* cursor wehen hover on hamburger icon becomes pointer */
+.menu-btn{
+    cursor: pointer;
+}
+
+/* details format and setting background on details section */
+.details{
+    display: flex;
+    background: url(images/a.jpg) no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* position of details */
+.details .max-width{
+    margin: auto 0 auto 20px;
+}
+
+/* text style of details:name */
+.details .details-cont .name{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -200px;
+    margin-left: -20px;
+}
+
+/* text style of details:address */
+.details .details-cont .Address{
+    font-size: 20px;
+    margin-left: -20px;
+}
+
+/* text style of details:mobile */
+.details .details-cont .mobile{
+    font-size: 15px;
+    margin-left: -20px;
+}
+
+/* Learn more setting */
+.details .details-cont a{
+    display: inline-block;
+    background: turquoise;
+    color: rgb(138, 102, 13);
+    margin-left: -20px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+/* learn more hover setting */
+.details .details-cont a:hover{
+    background: rgb(159, 240, 232);
+    color: rgb(156, 122, 36);
+}
+
+/* style for about section */
+
+section{
+    padding-left: 10px;
+    text-align: center;
+}
+
+p{
+    padding: 20px 0;
+}
+
+.about{
+    font-family: 'Montserrat', sans-serif;
+    background: url(images/banner-1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.about .title{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    background-color: rgb(138, 102, 13);
+    width: 150px;
+    height: 60px;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+}
+
+.about .about-cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+/* the portion of the page that will be used on the left side */
+.about .about-cont .left{
+    width:45%;
+    padding-top: 30px;
+}
+
+/* size of the image */
+/* object-fit - fits the image on the height and width selected. */
+.about .about-cont .left img{
+    height:200px;
+    width: 600px;
+    object-fit: cover;
+    /* border-radius: 50px; */
+}
+
+/* the portion of the page that will be used on the right side */
+.about .about-cont .right{
+    width:55%;
+    padding:0 70px;
+}
+
+.about .about-cont .right p span{
+    font-weight: 600;
+    color: rgb(138, 102, 13);
+}
+
+.about .about-cont p{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: turquoise;
+    border-radius: 20px;
+}
+
+/* education section */
+
+.education{
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    background: url(images/background1.jpg) no-repeat center;
+    padding: 100px 150px;
+}
+
+.education .title{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    background-color: rgb(138, 102, 13);
+    width: 150px;
+    height: 60px;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+}
+
+
+.education .educ-cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.education .educ-cont .card{
+    width: calc(50% - 10px);
+    text-align: center;
+    background-color: white;
+    border-radius:60px;
+    padding: 20px 25px;
+    height: 350px;
+    width: 350px;
+}
+
+/* transition */
+.education .educ-cont .card .box:hover{
+    transform: scale(1.05);
+}
+
+/* Use this if you want an effect when hovering on your card
+.education .educ-cont .card:hover */
+
+.education .educ-cont .card img{
+    height: 300px;
+    width: 300px;
+    border-radius: 100px;
+}
+
+.educ-cont .study{
+    text-align: center;
+    width: 100%;
+}
+
+.education .educ-cont .study{
+    padding-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-top: 60px;
+}
+
+.education .educ-cont .study span{
+    color: rgb(138, 102, 13);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* work section */
+
+.work_experience{
+    font-family: 'Montserrat', sans-serif;
+    /* margin-top: 60px; */
+    background: url(images/banner-5.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding-top: 100px;
+}
+
+.work_experience .work-cont{
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    padding-top: 10px;;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work_experience .title{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    background-color: rgb(138, 102, 13);
+    width: 250px;
+    height: 60px;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+}
+
+.work_experience .work-cont .left{
+    width:45%;
+    padding-top: 70px;
+}
+
+.work_experience .work-cont .left img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    background-color: white;
+    padding: 20px 0;
+    margin:20px;
+}
+
+.work_experience .work-cont .right{
+    width:55%;
+    padding-top: 50px;
+}
+
+.work_experience .work-cont .right p{
+    text-align: center;
+}
+
+.work_experience .work-cont .right .role{
+    font-size: 20px;
+    color: rgb(138, 102, 13);
+    font-weight: 600;
+}
+
+.work_experience .work-cont .left img:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* skill content */
+
+.skills{
+    font-family: 'Montserrat', sans-serif;
+    background: url(images/skills-2.jpg) no-repeat center;
+    padding-top: 100px;
+}
+
+.skills .title{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    background-color: rgb(138, 102, 13);
+    width: 120px;
+    height: 60px;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+}
+
+.skills .skills-cont{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.skills .skills-cont .column{
+    width: calc(50% - 30px)
+}
+
+.skills .skills-cont .left p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.skills .skills-cont .left a{
+    display: inline-block;
+    background: turquoise;
+    color: rgb(138, 102, 13);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.skills .skills-cont .left a:hover{
+    background: rgb(159, 240, 232);
+    color: rgb(156, 122, 36);
+}
+
+.skills .skills-cont .right .bar{
+    margin-bottom: 15px;
+}
+
+.skills .skills-cont .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.skills .skills-cont .right span{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px;
+    color: black;
+}
+
+/* creating line */
+.skills .skills-cont .right .line{
+    height: 15px;
+    width: 100%;
+    background: black;
+    position: relative;
+}
+
+/* creating dot on the line */
+.skills .skills-cont .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: turquoise;
+}
+
+/* line was defined as excel, sheets etc
+therefore, the bar will be 95% BEFORE
+the line excel */
+.skills-cont .right .excel::before{
+    width: 95%;
+}
+
+.skills-cont .right .sheets::before{
+    width: 95%;
+}
+
+.skills-cont .right .ds::before{
+    width: 90%;
+}
+
+.skills-cont .right .python::before{
+    width: 80%;
+}
+
+.skills-cont .right .mysql::before{
+    width: 85%;
+}
+
+.skills-cont .right .html::before{
+    width: 75%;
+}
+
+.skills-cont .right .css::before{
+    width: 75%;
+}
+
+.skills-cont .right .js::before{
+    width: 70%;
+}
+
+
+
+/*organizations content*/
+
+.organizations{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-top: 100px;
+    background: url(images/org.jpg) no-repeat center;
+}
+
+.organizations .title{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    background-color: rgb(138, 102, 13);
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+}
+
+.organizations .org-cont{
+    padding: 80px 0;
+}
+
+.organizations .org-cont img{
+    height: 300px;
+    width: 300px;
+    padding-bottom: 50px;
+}
+
+.organizations .org-cont .info .org{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(138, 102, 13);
+}
+
+
+
+/* certificates section */
+
+
+.certificates{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-top: 100px;
+    background: url(images/cert.jpg) no-repeat center;
+
+}
+
+.certificates .title{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    background-color: rgb(138, 102, 13);
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+}
+
+.certificates .certificate-cont{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+/* formatting of sizes of different images */
+.certificates .certificate-cont .image1{
+    height: 270px;
+    width: 270px;
+}
+
+.certificates .certificate-cont .image2{
+    height: 300px;
+    width: 300px;
+}
+
+.certificates .certificate-cont .image3{
+    height: 200px;
+    width: 700px;
+}
+
+.certificates .certificate-cont .image4{
+    height: 200px;
+    width: 350px;
+}
+
+.certificates .certificate-cont .row .row-cont{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.certificates .certificate-cont .row .row-title{
+font-size: 20px;
+font-weight: 600;
+color: rgb(138, 102, 13);
+padding-top: 20px;
+}
+
+.certificates .certificate-cont .row .row-title1{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(138, 102, 13);
+}
+
+.certificates .certificate-cont .row .row-dept1{
+    padding-top: 20px;
+}
+
+.certificates .certificate-cont .image2,
+.certificates .certificate-cont .image4{
+    border-radius: 20px;
+}
+
+/* achievements section */
+
+.achievements{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background: url(images/banner-4.jpg) no-repeat center;
+}
+
+.achievements .title{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    background-color: rgb(138, 102, 13);
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+}
+
+.achievements .achievements-cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievements .achievements-cont .left{
+    width: 50%
+}
+
+.achievements .achievements-cont .right{
+    width: 50%
+}
+
+
+/* .achievements .achievements-cont{
+    padding: 60px 180px;
+} */
+
+.achievements .achievements-cont img{
+    height: 300px;
+    width: 300px;
+}
+
+.achievements .achievements-cont .left{
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.achievements .achievements-cont .right{
+    text-align: center;
+    font-size: 18px;
+    /* padding-top: 120px;
+    margin-left: 50px; */
+    margin: auto;
+}
+
+.achievements .achievements-cont .right .cont-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(138, 102, 13);
+}
+
+/* message me section */
+
+.message{
+    background: url(images/flight-wallpapers-hd.jpg) repeat center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 90px 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.message .title{
+    text-align: center; 
+    padding-bottom: 25px;
+    padding-top:25px;
+    padding-left: 610px;
+    font-size: 30px;
+}
+
+.message .message-cont{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.message .message-cont .right{
+    text-align: center;
+    width: 50%
+}
+
+.message .right form .fields{
+    display: flex;
+}
+
+.message .right form .field,
+.message .right form .fields, .field{
+    height: 45px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.message .right form .field{
+    height: 40px;
+    width: 100%;
+}
+
+.message .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.message .right form .email{
+    margin-left: 5px;
+}
+
+.message .right form .field input,
+.message .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-left: 10px;
+    outline: none;
+    padding: 0 15px;
+}
+
+.message .right form .field input:focus,
+.message .right form .textarea textarea:focus{
+    border-color:rgb(138, 102, 13);
+}
+
+.message .right form .textarea textarea{
+    resize: none;
+}
+
+.message .right form .button{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.message .right form .button button{
+    height:40px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color:rgb(131, 15, 131);
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+
+
+.message .right form .button button:hover{
+    background: rgb(159, 240, 232);
+    color: rgb(156, 122, 36);
+}
+
+
+/* footer section */
+
+footer{
+    background: turquoise;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+span{
+    color:  rgb(156, 122, 36);
+    font-weight: 600;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* screen responsiveness to any screen */
+
+@media (max-width: 1920px) {
+    .menu-btn{
+        display: none;
+        z-index: 999;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .details {
+        width: 100%;
+    }
+    .details .details-cont{
+        padding-top: 50px;
+    }
+    .details .details-cont .name{
+        font-size: 20px;
+    }
+    .details .details-cont .Address,
+    .details .details-cont .mobile{
+        font-size: 17px;
+    }
+    .details .details-cont a{
+        font-size: 12px;
+    }
+
+    .skills .skills-cont .left a{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .details .details-cont{
+        padding-top: 100px;
+    }
+    .details .details-cont a{
+        font-size: 10px;
+    }
+
+    .skills .skills-cont .left a{
+        font-size: 10px;
+    }
+}
+
+
+/* about */
+@media (max-width: 1300px) {
+    .about .about-cont .column{
+        width: 100%;
+    }
+    .about .about-cont .right{
+        padding-top: 20px;
+    }
+    .about .about-cont .left img{
+        padding-bottom: 15px;
+    }
+
+    .message .title{
+        text-align: center; 
+        padding-bottom: 25px;
+        padding-top:25px;
+        padding-left: 550px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    /* hamburger icon appers and menu will disappear */
+    /* 999 means it cannot be overlapped whatever changes */
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 60vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        opacity: 80%;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+
+    .navbar .menu li{
+        display: block;
+        margin: 20px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .about .about-cont .left img{
+        height: 200px;
+        width: 400px;
+    }
+
+    .about .about-cont .left{
+    padding-top: 10px;
+    }
+
+    .about .about-cont p{
+        font-size: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .about .title{
+        font-size: 15px;
+        width: 120px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+    .about .about-cont .right{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .education .title{
+        font-size: 15px;
+        width: 120px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+
+    .education .educ-cont .study{
+        font-size: 18px;
+    }
+
+    .education .educ-cont .study span{
+        font-size: 18px
+    }
+
+    .work_experience .title{
+        font-size: 15px;
+        width: 170px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+
+    .work_experience .work-cont .column{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .work_experience .work-cont span{
+        font-size: 3px;
+    }
+
+    .work_experience .work-cont{
+        padding: 40px 40px;
+    }
+
+    .skills .title{
+        font-size: 15px;
+        width: 90px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+
+    .skills .skills-cont .column p,
+    .skills .skills-cont .column .bar span{
+        font-size: 18px;
+    }
+
+    .organizations .title{
+        font-size: 15px;
+        width: 150px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+
+    .organizations .org-cont .info,
+    .organizations .org-cont .info .org{
+        font-size: 18px;
+    }
+
+    .certificates .title{
+        font-size: 15px;
+        width: 150px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+
+    .certificates .certificate-cont .row-cont,
+    .certificates .certificate-cont .row-cont .row-title,
+    .certificates .certificate-cont .row-cont .row-title1{
+        font-size: 18px;
+    }
+
+    .achievements .achievements-cont .column{
+        width:100%
+    }
+
+    .achievements .title{
+        font-size: 15px;
+        width: 150px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+
+    .achievements .achievements-cont .right,
+    .achievements .achievements-cont .right .cont-title{
+        font-size: 18px;
+    }
+
+    .message .title{
+        text-align: center; 
+        padding-bottom: 25px;
+        padding-top:25px;
+        padding-left: 500px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .foot p{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .about .about-cont .right{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about .about-cont p{
+        font-size: 17px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .education .educ-cont .study{
+        font-size: 17px;
+    }
+
+    .work_experience .work-cont .right .role{
+        font-size: 17px
+    }
+
+    .work_experience .work-cont .column{
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .skills .skills-cont .column p,
+    .skills .skills-cont .column .bar span{
+        font-size: 17px;
+    }
+
+    .certificates .certificate-cont .row-cont,
+    .certificates .certificate-cont .row-cont .row-title,
+    .certificates .certificate-cont .row-cont .row-title1{
+        font-size: 17px;
+    }
+
+    .achievements .achievements-cont .right,
+    .achievements .achievements-cont .right .cont-title{
+        font-size: 17px;
+    }
+
+    .message .title{
+        text-align: center; 
+        padding-bottom: 25px;
+        padding-top:25px;
+        padding-left: 400px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .foot p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about{
+        padding-top: 100px;
+    }
+    
+    .about .title{
+        font-size: 13px;
+        width: 90px;
+        height: 30px;
+    }
+    .about .about-cont p{
+        font-size: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about .about-cont .right{
+        padding: 5px 0;
+    }
+
+    .education .title{
+        font-size: 13px;
+        width: 100px;
+        height: 30px;
+    }
+    .education .educ-cont .study{
+        font-size: 15px;
+    }
+    .education .educ-cont .study span{
+        font-size: 15px
+    }
+    .work_experience .title{
+        font-size: 13px;
+        width: 150px;
+        height: 30px;
+    }
+
+    .work_experience .work-cont .column{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .work_experience .work-cont .right .role{
+        font-size: 15px
+    }
+
+    .skills .title{
+        font-size: 13px;
+        width: 90px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+
+    .skills .skills-cont .column p,
+    .skills .skills-cont .column .bar span{
+        font-size: 15px;
+    }
+
+    .organizations .title{
+        font-size: 13px;
+        width: 150px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+
+    .organizations .org-cont .info,
+    .organizations .org-cont .info .org{
+        font-size: 15px;
+    }
+
+    .certificates .title{
+        font-size: 13px;
+        width: 130px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+
+    .certificates .certificate-cont .row-cont,
+    .certificates .certificate-cont .row-cont .row-title,
+    .certificates .certificate-cont .row-cont .row-title1{
+        font-size: 15px;
+    }
+
+    .achievements .title{
+        font-size: 13px;
+        width: 150px;
+        height: 48px;
+        padding-bottom: 35px;
+    }
+
+    .achievements .achievements-cont .right,
+    .achievements .achievements-cont .right .cont-title{
+        font-size: 15px;
+    }
+
+    .message .title{
+        text-align: center; 
+        padding-bottom: 25px;
+        padding-top:25px;
+        padding-left: 330px;
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    .foot p{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .about .about-cont p{
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about .about-cont .left img{
+        height: 150px;
+        width: 320px;
+    }
+    .education .educ-cont .study{
+        font-size: 14px;
+    }
+
+    .education .educ-cont .study span{
+        font-size: 14px
+    }
+
+    .work_experience .work-cont .column{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .work_experience .work-cont .right .role{
+        font-size: 14px
+    }
+    .skills .skills-cont .column p,
+    .skills .skills-cont .column .bar span{
+        font-size: 14px;
+    }
+
+    .organizations .org-cont .info,
+    .organizations .org-cont .info .org{
+        font-size: 14px;
+    }
+
+    .certificates .certificate-cont .row-cont,
+    .certificates .certificate-cont .row-cont .row-title,
+    .certificates .certificate-cont .row-cont .row-title1{
+        font-size: 14px;
+    }
+
+    .achievements .achievements-cont .left .image{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .achievements .achievements-cont .right,
+    .achievements .achievements-cont .right .cont-title{
+        font-size: 14px;
+    }
+
+    .message .title{
+        text-align: center; 
+        padding-bottom: 25px;
+        padding-top:25px;
+        padding-left: 230px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .foot p{
+        font-size: 14px;
+    }
+}
+
+/* education */
+
+@media (max-width: 1300px) {
+    .education{
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .education .educ-cont{
+        text-align: center;
+    }
+
+    .education .educ-cont .card{
+        height: 350px;
+        width: 350px;
+        margin: auto;
+        display: inline-block;
+    }
+
+    .work_experience .work-cont .left img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .education{
+        padding-left: 60px;
+        padding-right:60px;
+    }
+
+    .education .educ-cont{
+        padding-top: 50px;
+        padding: 40px 40px;
+    }
+
+    .education .educ-cont .card{
+        height: 300px;
+        width: 300px;
+    }
+    
+    .education .educ-cont .card img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .work_experience .work-cont .left img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .organizations .org-cont img{
+        height: 250px;
+        width: 250px;
+        padding-bottom: 40px;
+    }
+
+    .certificates .certificate-cont .image1{
+        height: 250px;
+        width: 250px;
+    }
+    .certificates .certificate-cont .image2{
+        height: 280px;
+        width: 280px;
+    }
+    .certificates .certificate-cont .image3{
+        height: 180px;
+        width: 650px;
+    }
+    .certificates .certificate-cont .image4{
+        height: 180px;
+        width: 300px;
+    }
+
+    .achievements .achievements-cont img{
+        height: 250px;
+        width: 250px;
+    }
+}
+
+   
+
+@media (max-width: 1000px) {
+    .education .educ-cont .card{
+        height: 250px;
+        width: 250px;
+        text-align: center;
+        margin:10px;
+    }
+
+    .education .educ-cont .card img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .work_experience .work-cont .left img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .organizations .org-cont img{
+        height: 200px;
+        width: 200px;
+        padding-bottom: 30px;
+    }  
+    
+    .certificates .certificate-cont .image1{
+        height: 180px;
+        width: 180px;
+    }
+    .certificates .certificate-cont .image2{
+        height: 200px;
+        width: 200px;
+    }
+    .certificates .certificate-cont .image3{
+        height: 130px;
+        width: 300px;
+    }
+    .certificates .certificate-cont .image4{
+        height: 130px;
+        width: 250px;
+    }
+
+    .achievements .achievements-cont img{
+        height: 200px;
+        width: 200px;
+    }
+}
+
